@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+@{
+        Layout = null;
+}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MeuPrimeiroNegocio</title>
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<head>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <!-- Seu JS -->
+    <script src="~/js/script.js"></script>
+</head>
+<body>
+    <body>
+
+        <div class="container-principal">
+            @RenderBody()
+        </div>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

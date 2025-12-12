@@ -1,0 +1,24 @@
+﻿@page
+@model MeuPrimeiroNegocio.Pages.CadastramentoModel
+@{
+    Layout = "_Layout";
+}
+<div id="container">
+    <div id="TelaDeCadastro">
+        <h1>
+            Cadastre-se</h2>
+            <form method="post">
+                <label class="TextoInput" for="Nome">Digite seu Nome:</label>
+                <input type="text" class="entradaDados" name="Nome">
+                <label for="email" class="TextoInput">Digite seu Email:</label>
+                <input type="email" class="entradaDados" name="email">
+                <label for="senha" class="TextoInput">Digite a sua Senha:</label>
+                <input type="password" class="entradaDados" name="senha">
+                <label for="Confsenha" class="TextoInput">Confirme sua Senha:</label>
+                <input type="password" class="entradaDados" name="senha">
+                <button type="submit" class="botaoEnviar" id="cadastro" color="white">Cadastrar</button>
+            </form>
+            <span class="Cadastre">Ja Possui Conta? </span>
+            <a class="Cadastre-se" href="/index">Login!</a>
+    </div>
+</div>

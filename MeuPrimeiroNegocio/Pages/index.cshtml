@@ -1,0 +1,22 @@
+﻿@page
+@model MeuPrimeiroNegocio.Pages.LoginModel
+@{
+    Layout = "_Layout";
+}
+<div id="container">
+    <div id="TelaDeLogin">
+        <h1>
+            Bem-Vindo</h1>
+            <form method="post">
+                <label for="email" class="TextoInput">Digite seu Email:</label>
+                <input type="email" class="entradaDados" name="email">
+
+                <label for="senha" class="TextoInput">Digite a sua Senha:</label>
+                <input type="password" class="entradaDados" name="senha">
+
+                <button type="submit" class="botaoEnviar" id="BotaoEnviar" color="white">Entrar</button>
+            </form>
+            <span class="Cadastre">Nao Possui Conta? </span>
+            <a class="Cadastre-se" href="/cadastramento">Cadastre-se</a>
+    </div>
+</div>
